@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Orca.Domain.Model.Data.AuditingContext">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\AuditingContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="AuditingScopeCollection" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Orca.Domain.Model.Data.AuditingDefinition">
+    <Position X="4" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Data\AuditingDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Orca.Domain.Model.Data.AuditingRecord">
+    <Position X="4.5" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAABAAAAgAAAAQAA=</HashCode>
+      <FileName>Data\AuditingRecord.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AuditingRecordDefinition" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Orca.Domain.Model.Data.AuditingScope">
+    <Position X="9" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAABBAAAAAAAAAAIAAAAAAAABAAAAAABAA=</HashCode>
+      <FileName>Data\AuditingScope.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AuditingScopeDefinition" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="AuditingRecordCollection" />
+      <Property Name="NestedScopes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Orca.Domain.Model.Data.AuditSessionContext">
+    <Position X="0.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAGAAAAAAAAAACAADCAAACgAgQAAABAAAAAAAI=</HashCode>
+      <FileName>Data\AuditSessionContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

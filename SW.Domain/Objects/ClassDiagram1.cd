@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Orca.Domain.DynamicPropertyBase">
+    <Position X="6" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABAAAIAAAAIgAAAAAAAAAAAAAAAAAAAgAAAgAIAAAEA=</HashCode>
+      <FileName>Objects\DynamicPropertyBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Orca.Domain.PropertyDefinition">
+    <Position X="3.75" Y="5.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAASAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PropertyDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Orca.Domain.DynamicValue{T}" Collapsed="true">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAQgYAAAEAA=</HashCode>
+      <FileName>Objects\DynamicValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Orca.Domain.DefaultPropertyValue">
+    <Position X="9" Y="5.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAADAAAAEAAAAAAAAAAAAAAABAAAAAAAQAAAAEAAA=</HashCode>
+      <FileName>Objects\DefaultPropertyValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Orca.Domain.PropertyValue">
+    <Position X="13.25" Y="5.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\PropertyValue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Orca.Domain.IDynamicValue" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Objects\IDynamicValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

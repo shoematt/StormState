@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF4AAF1F-EFA9-43CE-AF1F-BAE8B2A1B313}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Orca.Domain</RootNamespace>
+    <AssemblyName>Orca.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\..\Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'InstallDebug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\InstallDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\Output\Orca.Domain.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'InstallDebug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\InstallDebug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\..\..\Output\Orca.Domain.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Support\LibBin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\..\..\Support\LibBin\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\BasePropertyValueCacheCommand.cs" />
+    <Compile Include="Commands\DomainObjectChangePropertyCommand.cs" />
+    <Compile Include="Commands\DomainObjectCommandAttribute.cs" />
+    <Compile Include="Commands\DomainObjectPropertyRequiresValidationAttribute.cs" />
+    <Compile Include="Commands\ExceptionOccuredCommand.cs" />
+    <Compile Include="Commands\ICommandObserver.cs" />
+    <Compile Include="Commands\IDomainObjectCommand.cs" />
+    <Compile Include="Commands\ItemCreatedCommand.cs" />
+    <Compile Include="Commands\MethodFailureMessageCommand.cs" />
+    <Compile Include="Commands\ServerCacheStartedCommand.cs" />
+    <Compile Include="Commands\UpdateItemCommand.cs" />
+    <Compile Include="Commands\UpdateWorkInstructionCommand.cs" />
+    <Compile Include="Commands\WorkInstructionCreatedCommand.cs" />
+    <Compile Include="DomainRegistry.cs" />
+    <Compile Include="DynamicProperties\DynamicPropertyManager.cs" />
+    <Compile Include="DynamicProperties\PropertiesImplementation.cs" />
+    <Compile Include="DynamicProperties\PropertyDefinitionStateObject.cs" />
+    <Compile Include="DynamicProperties\PropertyValueApplicator.cs" />
+    <Compile Include="DynamicProperties\PropertyValueDescriptor.cs" />
+    <Compile Include="Exceptions\NameAlreadyUsedException.cs" />
+    <Compile Include="Exceptions\OrcaArgumentNullException.cs" />
+    <Compile Include="Interfaces\IAssociationManager.cs" />
+    <Compile Include="Interfaces\IDefaultsProviderService.cs" />
+    <Compile Include="Interfaces\IDynamicProperty.cs" />
+    <Compile Include="Interfaces\IDynamicPropertyDefinition.cs" />
+    <Compile Include="Interfaces\IExternalItemProviderService.cs" />
+    <Compile Include="Interfaces\IHasTemplate.cs" />
+    <Compile Include="Interfaces\IInternalItemProviderService.cs" />
+    <Compile Include="Interfaces\IItemFactory.cs" />
+    <Compile Include="Interfaces\INameManager.cs" />
+    <Compile Include="Interfaces\IOrcaService.cs" />
+    <Compile Include="Interfaces\IPublishService.cs" />
+    <Compile Include="Interfaces\ISupportDefaultPropertyValues.cs" />
+    <Compile Include="Interfaces\ISupportDynamicProperties.cs" />
+    <Compile Include="Interfaces\ISupportPropertyValues.cs" />
+    <Compile Include="Interfaces\IWorkflowEvent.cs" />
+    <Compile Include="Interfaces\IWorkflowEventContainer.cs" />
+    <Compile Include="Interfaces\IWorkInstructionFactory.cs" />
+    <Compile Include="Interfaces\IWorkTypeManager.cs" />
+    <Compile Include="Objects\CategoryToLocation.cs" />
+    <Compile Include="Objects\DefaultPropertyValueReference.cs" />
+    <Compile Include="Objects\DisplayFilter.cs" />
+    <Compile Include="Objects\DynamicPropertySelectionCriteria.cs" />
+    <Compile Include="Objects\Extensions\WorkTypeExtensions.cs" />
+    <Compile Include="Objects\Item.cs" />
+    <Compile Include="Objects\ItemData.cs" />
+    <Compile Include="Objects\ItemDataPropertyView.cs" />
+    <Compile Include="Objects\ItemTemplate.cs" />
+    <Compile Include="Exceptions\CanNotDeletePublishedDomainObject.cs" />
+    <Compile Include="Exceptions\DomainObjectDoesNotSupportDynamicProperties.cs" />
+    <Compile Include="Exceptions\IsNotAnIDomainObjectException.cs" />
+    <Compile Include="Exceptions\PropertiesAlreadyAssignedExistException.cs" />
+    <Compile Include="Exceptions\PropertyAlreadyExistException.cs" />
+    <Compile Include="Exceptions\PropertyDefinitionMustBePublishedException.cs" />
+    <Compile Include="Exceptions\PropertyDoesNotExistException.cs" />
+    <Compile Include="Exceptions\PropertyNameAlreadyDefinedException.cs" />
+    <Compile Include="Exceptions\DomainObjectMustBeSavedException.cs" />
+    <Compile Include="Exceptions\PropertyValueException.cs" />
+    <Compile Include="Exceptions\WorkTypeNotFoundException.cs" />
+    <Compile Include="Objects\AssociationProxy.cs" />
+    <Compile Include="Objects\BaseObjects\PublishableDomainObject.cs" />
+    <Compile Include="Objects\CompletionInfo.cs" />
+    <Compile Include="Objects\ExternalContainerLink.cs" />
+    <Compile Include="Objects\DynamicPropertyCriterion.cs" />
+    <Compile Include="Objects\LocationCategory.cs" />
+    <Compile Include="Objects\OrcaKeyValue.cs" />
+    <Compile Include="Objects\PropertyValueObject.cs" />
+    <Compile Include="Objects\SkyTraxLocation.cs" />
+    <Compile Include="Objects\Location.cs" />
+    <Compile Include="Memento\Memento.cs" />
+    <Compile Include="Objects\Constants\DomainConstants.cs" />
+    <Compile Include="Objects\BaseObjects\DomainObjectWithDefaultProperties.cs" />
+    <Compile Include="Objects\BaseObjects\DefaultPropertiesChangedEventArgs.cs" />
+    <Compile Include="Objects\PropertyBase.cs" />
+    <Compile Include="Objects\PropertyDefinition.cs" />
+    <Compile Include="DynamicProperties\DefaultPropertyValueDescriptor.cs" />
+    <Compile Include="DynamicProperties\PropertyTypeDescriptor.cs" />
+    <Compile Include="DynamicProperties\PropertyTypeDescriptorProvider.cs" />
+    <Compile Include="Objects\DefaultPropertyValue.cs" />
+    <Compile Include="Interfaces\IDecisionPoint.cs" />
+    <Compile Include="Interfaces\IDescisionPointAction.cs" />
+    <Compile Include="Interfaces\IDetermineWorkInstructionAction.cs" />
+    <Compile Include="Interfaces\IEventAction.cs" />
+    <Compile Include="Interfaces\IGetInputAction.cs" />
+    <Compile Include="Interfaces\ILocation.cs" />
+    <Compile Include="Interfaces\ILocationType.cs" />
+    <Compile Include="Interfaces\IValidation.cs" />
+    <Compile Include="Interfaces\IVEProcessFlow.cs" />
+    <Compile Include="Interfaces\IWorkInstruction.cs" />
+    <Compile Include="Objects\BaseObjects\DomainObject.cs" />
+    <Compile Include="Objects\BaseObjects\DomainObjectWithPropertyValues.cs" />
+    <Compile Include="Objects\DynamicValue.cs" />
+    <Compile Include="Objects\IDynamicValue.cs" />
+    <Compile Include="Objects\NameToTypeAssociation.cs" />
+    <Compile Include="Objects\PlaceHolders\ExternalMessageData.cs" />
+    <Compile Include="Objects\PropertyValue.cs" />
+    <Compile Include="Objects\PublishNode.cs" />
+    <Compile Include="Objects\StateMapData.cs" />
+    <Compile Include="Objects\StateMapTemplate.cs" />
+    <Compile Include="Objects\SystemVariable.cs" />
+    <Compile Include="Objects\ViewObjects\ItemWithPropertyValuesView.cs" />
+    <Compile Include="Objects\ViewObjects\WorkInstructionWithPropertyValuesView.cs" />
+    <Compile Include="Objects\WorkFlowInstance.cs" />
+    <Compile Include="Objects\WorkFlowTemplate.cs" />
+    <Compile Include="Objects\WorkFlowWorkTypeNode.cs" />
+    <Compile Include="Objects\WorkInstruction.cs" />
+    <Compile Include="Objects\ExternalDataBaseObject.cs" />
+    <Compile Include="Objects\WorkInstructionContainerData.cs" />
+    <Compile Include="Objects\WorkInstructionData.cs" />
+    <Compile Include="Objects\WorkType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Objects\Constants\WorkInstructionState.cs" />
+    <Compile Include="Objects\WorkInstructionContainer.cs" />
+    <Compile Include="SystemDefaultObjectIDs.cs" />
+    <Compile Include="WorkFlows\WorkFlowBuilder.cs" />
+    <Compile Include="WorkFlows\WorkTypeAlreadyExistInWorkFlowException.cs" />
+    <Compile Include="WorkInstructionCreatedEventArgs.cs" />
+    <Compile Include="WorkInstructionUpdateResults.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SW.Core\Orca.Core.csproj">
+      <Project>{BC3ADDFC-A3D0-4487-9A8F-DB7AA5A88427}</Project>
+      <Name>Orca.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Objects\ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
